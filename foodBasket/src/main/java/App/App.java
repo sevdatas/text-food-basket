@@ -1,12 +1,12 @@
 package App;
 
 //import environment.Environment;
-import logic.logic;
+import logic.Logic;
 
 public class App {
 
 	public static void main(String[] args) {
-		logic logic = new logic();
+		Logic logic = new Logic();
 		logic.run();
 
 	}

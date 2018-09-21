@@ -3,34 +3,34 @@ package environment;
 import java.util.ArrayList;
 import java.util.List;
 
-import entities.foods;
-import entities.meatmeals;
-import entities.pasteries;
-import entities.payment;
-import entities.vegimeals;
+import entities.Food;
+import entities.MeatMeal;
+import entities.Pasteries;
+import entities.Payment;
+import entities.Vegimeal;
 import entities.paymentopt;
 
 public class Environment {
-	public List<foods> meal = new ArrayList<foods>();
-	public List<payment> paymentopt = new ArrayList<payment>(3);	
-	
+	public List<Food> meal = new ArrayList<Food>();	
+	public List<Payment> paymentopt = new ArrayList<Payment>(3);	
+
 	public Environment() {
 		this.generateEntities();
 		
 	}
 
 	private void generateEntities() {
-		meatmeals mm1 = new meatmeals(1,45, "beyti");
-		meatmeals mm2 = new meatmeals(2,40, "urfa");
-		meatmeals mm3 = new meatmeals(3,30, "adana");
-		meatmeals mm4 = new meatmeals(4,20, "ciðer");
+		MeatMeal mm1 = new MeatMeal(45, "beyti");
+		MeatMeal mm2 = new MeatMeal(40, "urfa");
+		MeatMeal mm3 = new MeatMeal(30, "adana");
+		MeatMeal mm4 = new MeatMeal(20, "ciðer");
 		
-		vegimeals vm1 = new vegimeals(5,12,"ýspanak");
-		vegimeals vm2 = new vegimeals(6,13,"kereviz");
-		vegimeals vm3 = new vegimeals(7,15,"enginar");
+		Vegimeal vm1 = new Vegimeal(12,"ýspanak");
+		Vegimeal vm2 = new Vegimeal(13,"kereviz");
+		Vegimeal vm3 = new Vegimeal(15,"enginar");
 		
-		pasteries p1 = new pasteries(8,10, "çið börek");
-		pasteries p2 = new pasteries(9,20, "mantý");
+		Pasteries p1 = new Pasteries(10, "çið börek");
+		Pasteries p2 = new Pasteries(20, "mantý");
 
 		
 		paymentopt po1 = new paymentopt(1,1, "havale");	
